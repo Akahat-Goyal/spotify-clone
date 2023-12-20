@@ -1,0 +1,437 @@
+body{
+   font-family: 'Montserrat', sans-serif;
+   margin: 0;
+   background-color: #000;
+   color: #fff;
+   overflow: hidden;
+}
+
+.main{
+    display: flex;
+    height: 100vh;
+    /* padding: 0.5rem; */
+}
+
+.sidebar{
+    /* background-color: green; */
+    width: 350px;
+    margin: 0 0 4.7rem 0;
+}
+
+.main-content{
+    background-color: #121212;
+    flex: 1;
+    border-radius: .8rem;
+    margin: 0.5rem 0.75rem 4.7rem 0rem;
+    /* padding-left: 1rem; */
+    overflow: auto;
+    scrollbar-width: .1rem;
+    scrollbar-shadow-color: #383838;
+}
+
+.music-player{
+    /* background-color: blueviolet; */
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 72px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    padding-left: 1rem;
+}
+
+.nav {
+    background-color: #121212;
+    border-radius: .8rem;
+    height: 112px;
+    padding: 0.5rem 0.75rem;
+    margin: 0.5rem 0.75rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* justify-content: space-evenly; */
+}
+
+.nav-option{
+    line-height: 2.5rem;
+    /* height: 40px; */
+    opacity: 0.7;
+    padding: .5rem .75rem;
+}
+
+.nav-option:hover {
+    opacity: 1;
+}
+
+.nav-option i{
+    font-size: 1.25rem;
+}
+
+.library{
+    background-color: #121212;
+    border-radius: .8rem;
+    height: 420px;
+    margin: 0.75rem 0.75rem ;
+    padding: 0 5px;
+}
+
+.library img{
+    height: 1.25rem;
+}
+
+.options{
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons i{
+    font-size: 1.25rem;
+    opacity: 0.6;
+    padding: 1rem .75rem;
+    margin-right: .75rem;
+}
+
+.icons i:hover{
+    opacity: 1;
+}
+
+.box{
+    background-color: #232323;
+    height: 8rem;
+    border-radius: 1rem;
+    margin: 0.5rem 0 0.5rem 0;
+    padding: 0.25rem 1.25rem;
+}
+
+.box-p1{
+    font-weight: 500;
+}
+.box-p2{
+    font-size: .75rem;
+    opacity: .9;
+}
+
+.badge{
+    background-color: #fff;
+    border: none;
+    border-radius: 100px;
+    padding: 0.55rem;
+    font-weight: 600;
+    font-size: .9rem;
+    margin-top: 6px;
+}
+
+.dark-badge{
+    background-color: #000;
+    color: #fff;
+}
+.sticky-nav{
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0 1rem 0;
+    z-index: 1;
+}
+
+.sticky-nav-options{
+    width: 350px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.sticky-nav-icon{
+    width: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.big-icon:hover{
+    /* font-size: 1.2rem; */
+    transform: scale(1.09);
+    cursor: pointer;
+}
+
+@media(max-width:1000px){
+    .hide{
+        display: none;
+    }
+}
+
+
+
+.top-card{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.top-song{
+    background-color: #232323;
+    width: 420px;
+    border-radius: .35rem;
+    display: flex;
+    margin: 0 .5rem .5rem 0;
+    transition: .2s;
+}
+
+.top-song img{
+    height: 50px;
+    border-radius: .35rem 0 0 .35rem;
+}
+
+.top-song p{
+    font-size: .9rem;
+    font-weight: 600;
+    margin-left: 1rem;
+}
+
+.top-song:hover{
+    background-color: #383838;
+    cursor: pointer;
+}
+
+.card{
+    background-color: #232323;
+    width: 150px;
+    border-radius: .5rem;
+    padding: 1rem;
+    margin: 0 1.5rem 1rem 0;
+    transition: .4s;
+}
+
+.card:hover{
+    background-color: #383838;
+    cursor: pointer;
+}
+
+.card-img{
+    width: 100%;
+    border-radius: .5rem;
+}
+
+.cards{
+    padding: 0 1.5rem 0 1.5rem;
+}
+
+.card-title{
+    font-weight: 600;
+}
+
+.card-info{
+    font-size: .80rem;
+    opacity: .75;
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h2 span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.social_media i{
+    opacity: .7;
+}
+
+.social_media i:hover{
+    opacity: 1;
+    /* font-size: 1.5rem; */
+    transform: scale(1.3);
+}
+
+.social_media{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.social_media ol{
+    padding: 0 2.5rem 0 0;
+    margin: 0 2.5rem 0 0;
+}
+
+
+hr{
+    opacity: .1;
+}
+
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-list ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-list{
+    margin-bottom: 4rem;
+    margin-top: 1.5rem;
+}
+
+.footer-list ul a{
+    opacity: .7;
+    font-size: .9rem;
+    margin-right: .5rem;
+}
+
+.footer-list ul a:hover{
+    opacity: 1;
+}
+
+.footer-label{
+    opacity: .7;
+    margin-top: 2.4rem;
+    margin-right: 3.5rem;
+}
+
+
+.music-player{
+    display: flex;
+    /*justify-content: space-between;
+    align-items: center; */
+}
+
+.album{
+    width: 22.5%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.album .album-img{
+    border-radius: .5rem;
+}
+
+.album .album-icon{
+    opacity: .7;
+}
+
+.album .album-icon:hover{
+    opacity: 1;
+    /* height: 1.55rem; */
+    transform: scale(1.05);
+    /* width: 1rem; */
+}
+
+.album-detail{
+    opacity: .7;
+    font-size: .6rem;
+    margin-top: 5px;
+}
+
+.album-detail:hover{
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.album-title:hover{
+    text-decoration: underline;
+}
+
+.player{
+    width: 50%;
+}
+
+.player-control-icon{
+    height: 1rem;
+    opacity: .7;
+    padding: 0.5rem 1.5rem;
+}
+
+.player-control-icon:hover{
+    opacity: 1;
+}
+
+.player-control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pause-btn{
+    height: 2rem; 
+    opacity: 1;
+}
+
+.pause-btn:hover{
+    transform: scale(1.12);
+}
+
+.playback-bar{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.progress-bar{
+    width: 70%;
+    cursor: pointer;
+    height: 0.2rem;
+    margin-top: 0.35rem;
+}
+
+/* .progress-bar{
+    width: 70%;
+    cursor: pointer;
+    appearance: none;
+    border-radius: 100px;
+    height: .2rem;
+    margin-top: 0.35rem;
+}
+
+.progress-bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: green;
+    border-radius: 50%;
+} */
+
+.time{
+    font-size: 0.75rem;
+    opacity: 0.7;
+}
+
+.control{
+    width: 27.5%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.control-img{
+    height: 2.5rem;
+    opacity: .7;
+}
+
+.controls-img{
+    height: 1rem;
+    opacity: .7;
+}
+
+.control img:hover{
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.progress-bar2{
+    height: .2rem;
+}
+
