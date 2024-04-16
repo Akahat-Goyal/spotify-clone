@@ -1,1 +1,1 @@
-"I made a copy of a famous music app like Spotify. For this project, I used HTML and CSS, which are languages for designing how things look on the internet."
+"Developed a Spotify-inspired music streaming app clone using HTML and CSS, showcasing my proficiency in front-end development. Ensured picture perfect perfection while creating it."
